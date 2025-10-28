@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Khoa học: Vấn đề Cháy rừng Toàn cầu</title>
+    
+    <!-- Tải Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tải font Inter (một font chữ chuyên nghiệp và dễ đọc) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Áp dụng font Inter cho toàn bộ trang */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Hiệu ứng cho tiêu đề mục lục */
+        nav a {
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #1D4ED8; /* blue-700 */
+            transform: translateX(4px);
+        }
+        
+        /* Định dạng cho trích dẫn */
+        blockquote {
+            border-left: 4px solid #3B82F6; /* blue-500 */
+            background-color: #EFF6FF; /* blue-50 */
+            padding: 1rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            font-style: italic;
+            color: #1E3A8A; /* blue-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
+
+    <!-- Header chính của báo cáo -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Nhóm Tiêu đề và Phụ đề -->
+            <div>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900">
+                    BÁO CÁO KHOA HỌC: <span class="text-red-600">CHÁY RỪNG TOÀN CẦU</span>
+                </h1>
+                <p class="text-sm text-gray-600 mt-1 md:mt-0">Một Phân tích Chuyên sâu</p>
+            </div>
+            <!-- Nút Quay về -->
+            <a href="/index.html" class="mt-3 md:mt-0 px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300 ease-in-out">
+                &larr; Quay về web chính
+            </a>
+        </div>
+    </header>
+
+    <!-- Thân trang: Chia làm 2 cột: Mục lục (Trái) và Nội dung (Phải) -->
+    <div class="max-w-6xl mx-auto px-4 py-8 md:py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Cột Mục lục (Sticky) -->
+        <aside class="md:col-span-1 md:sticky md:top-24 h-max">
+            <nav class="bg-white p-5 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4 border-b pb-2 text-gray-900">Mục lục</h2>
+                <ul class="space-y-3">
+                    <li><a href="#gioi-thieu" class="block font-semibold text-gray-700 hover:text-blue-700">1. Giới thiệu</a></li>
+                    <li><a href="#thuc-trang" class="block font-semibold text-gray-700 hover:text-blue-700">2. Thực trạng (2023-2025)</a></li>
+                    <li><a href="#nguyen-nhan" class="block font-semibold text-gray-700 hover:text-blue-700">3. Nguyên nhân</a></li>
+                    <li><a href="#hau-qua" class="block font-semibold text-gray-700 hover:text-blue-700">4. Hậu quả</a></li>
+                    <li><a href="#canh-bao" class="block font-semibold text-gray-700 hover:text-blue-700">5. Cảnh báo chuyên gia</a></li>
+                    <li><a href="#giai-phap" class="block font-semibold text-gray-700 hover:text-blue-700">6. Giải pháp phòng chống</a></li>
+                    <li><a href="#ket-luan" class="block font-semibold text-gray-700 hover:text-blue-700">7. Kết luận</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Cột Nội dung chính -->
+        <main class="md:col-span-3 space-y-16">
+            
+            <!-- 1. Giới thiệu -->
+            <section id="gioi-thieu" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">1. Giới thiệu: Cháy rừng là gì?</h2>
+                <p class="text-lg mb-4">
+                    Cháy rừng là một đám cháy không kiểm soát được, xảy ra trong các khu vực có thảm thực vật dễ cháy như rừng, đồng cỏ, hoặc trảng cây bụi. Chúng có thể được bắt nguồn từ các nguyên nhân tự nhiên (như sét đánh) hoặc do hoạt động của con người (cố ý hoặc vô ý).
+                </p>
+                <p class="text-lg mb-6">
+                    Mặc dù cháy rừng là một phần tự nhiên của nhiều hệ sinh thái, giúp dọn dẹp vật liệu chết và tái tạo mầm sống mới, nhưng tần suất, cường độ và quy mô của các vụ cháy rừng trong những thập kỷ gần đây đã tăng lên mức báo động, gây ra những hậu quả nghiêm trọng trên toàn cầu.
+                </p>
+                <!-- Hình ảnh minh họa -->
+                <figure>
+                    <img src="/image/cháy.jpg" 
+                         alt="Hình ảnh minh họa một vụ cháy rừng dữ dội" 
+                         class="w-full h-auto object-cover rounded-lg shadow-inner"
+                         onerror="this.src='https://placehold.co/1200x600?text=Lỗi+tải+ảnh'">
+                    <figcaption class="text-center text-sm text-gray-600 mt-2">Hình 1: Một vụ cháy rừng quy mô lớn đang lan rộng.</figcaption>
+                </figure>
+            </section>
+
+            <!-- 2. Thực trạng 3 năm gần đây -->
+            <section id="thuc-trang" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">2. Thực trạng 3 năm gần đây (2023-2025)</h2>
+                <p class="text-lg mb-4">
+                    Ba năm qua đã chứng kiến những kỷ lục đau buồn về cháy rừng. Biến đổi khí hậu, với các đợt nắng nóng khắc nghiệt và hạn hán kéo dài, đã tạo ra điều kiện "mồi lửa" hoàn hảo.
+                </p>
+                <ul class="list-disc list-inside space-y-3 text-lg mb-4">
+                    <li>
+                        <strong>Năm 2023:</strong> Được ghi nhận là năm có lượng phát thải carbon từ cháy rừng cao nhất lịch sử, đặc biệt là các vụ "siêu cháy" (megafires) tại Canada đã thiêu rụi hàng triệu hecta và gây ra khói mù lan đến tận châu Âu.
+                    </li>
+                    <li>
+                        <strong>Năm 2024:</strong> Các khu vực Địa Trung Hải (Hy Lạp, Ý, Tây Ban Nha) và Hawaii (Mỹ) trải qua các vụ cháy kinh hoàng, tàn phá nhiều khu dân cư và gây thiệt hại lớn về người và của.
+                    </li>
+                    <li>
+                        <strong>Năm 2025 (dự báo):</strong> Các mô hình khí hậu cảnh báo nguy cơ cháy rừng đặc biệt cao ở khu vực Amazon (Nam Mỹ) và Úc do hiện tượng El Niño và La Niña thay đổi đột ngột, làm tăng cường độ khô hạn.
+                    </li>
+                </ul>
+                <p class="text-lg font-semibold text-gray-900">
+                    Tổng diện tích rừng bị mất do cháy trong 3 năm qua ước tính vượt 20 triệu hecta trên toàn cầu, tương đương diện tích của nhiều quốc gia.
+                </p>
+            </section>
+
+            <!-- 3. Nguyên nhân -->
+            <section id="nguyen-nhan" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">3. Phân tích Nguyên nhân</h2>
+                <p class="text-lg mb-4">
+                    Nguyên nhân gây cháy rừng là sự kết hợp phức tạp của các yếu tố tự nhiên và con người, trong đó yếu tố con người ngày càng chiếm ưu thế.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Nguyên nhân con người -->
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">3.1. Do Con người (Chiếm 80-90%)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-base">
+                            <li><strong>Nông nghiệp:</strong> Đốt nương làm rẫy, xử lý thực bì không kiểm soát.</li>
+                            <li><strong>Bất cẩn:</strong> Vứt tàn thuốc lá, đốt rác, tia lửa từ máy móc.</li>
+                            <li><strong>Giải trí:</strong> Đốt lửa trại khi đi dã ngoại, du lịch và không dập tắt đúng cách.</li>
+                            <li><strong>Cố ý:</strong> Phá hoại, đốt rừng để chiếm đất, hoặc do mâu thuẫn xã hội.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Nguyên nhân tự nhiên -->
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2">3.2. Do Tự nhiên (Chiếm 10-20%)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-base">
+                            <li><strong>Sét đánh:</strong> Là nguyên nhân tự nhiên phổ biến nhất, thường xảy ra trong cơn giông bão khô (không có mưa).</li>
+                            <li><strong>Núi lửa:</strong> Dung nham phun trào có thể bắt lửa vào thảm thực vật khô.</li>
+                            <li><strong>Tự bốc cháy:</strong> Hiếm gặp, nhưng có thể xảy ra khi lá cây khô, than bùn tích tụ và phân hủy sinh nhiệt trong điều kiện cực kỳ khô nóng.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="text-lg mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                    <strong>Yếu tố xúc tác quan trọng:</strong> Biến đổi khí hậu không trực tiếp gây cháy, nhưng nó làm tăng nhiệt độ, gây hạn hán và tạo ra "nhiên liệu" (rừng cây khô kiệt) dễ bắt lửa và cháy dữ dội hơn.
+                </p>
+            </section>
+
+            <!-- 4. Hậu quả -->
+            <section id="hau-qua" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">4. Tác động và Hậu quả Đa chiều</h2>
+                <p class="text-lg mb-4">
+                    Cháy rừng để lại những hậu quả tàn khốc và lâu dài trên nhiều phương diện.
+                </p>
+                <ul class="list-decimal list-inside space-y-4 text-lg">
+                    <li>
+                        <strong>Mất đa dạng sinh học:</strong> Hàng tỷ động vật bị chết, mất môi trường sống. Nhiều loài quý hiếm, đặc hữu bị đẩy đến bờ vực tuyệt chủng.
+                    </li>
+                    <li>
+                        <strong>Biến đổi khí hậu:</strong> Cháy rừng giải phóng một lượng khổng lồ CO2 và các khí nhà kính khác (như Methane) vào khí quyển, tạo ra một "vòng lặp phản hồi tích cực" (positive feedback loop) làm Trái Đất nóng lên nhanh hơn.
+                    </li>
+                    <li>
+                        <strong>Sức khỏe con người:</strong> Khói bụi mịn (PM2.5) từ các đám cháy lan xa hàng ngàn km, gây ra các bệnh nghiêm trọng về hô hấp và tim mạch cho hàng triệu người.
+                    </li>
+                    <li>
+                        <strong>Kinh tế - Xã hội:</strong> Thiệt hại tài sản, nhà cửa, cơ sở hạ tầng. Phá hủy các ngành công nghiệp phụ thuộc vào rừng (gỗ, du lịch, nông nghiệp). Gây ra tình trạng di tản và mất an ninh lương thực.
+                    </li>
+                    <li>
+                        <strong>Môi trường đất và nước:</strong> Lớp đất mặt bị thiêu rụi, dễ gây xói mòn, sạt lở khi mưa lớn. Tro bụi làm ô nhiễm nguồn nước mặt và nước ngầm.
+                    </li>
+                </ul>
+                <!-- Hình ảnh hậu quả -->
+                <figure class="mt-6">
+                    <img src="/image/Screenshot (69).png" 
+                         alt="Hình ảnh khu rừng bị thiêu rụi sau vụ cháy" 
+                         class="w-full h-auto object-cover rounded-lg shadow-inner"
+                         onerror="this.src='https://placehold.co/1200x600?text=Lỗi+tải+ảnh'">
+                    <figcaption class="text-center text-sm text-gray-600 mt-2">Hình 2: Khung cảnh hoang tàn sau khi ngọn lửa đi qua.</figcaption>
+                </figure>
+            </section>
+            
+            <!-- 5. Cảnh báo của chuyên gia -->
+            <section id="canh-bao" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">5. Cảnh báo từ các Chuyên gia</h2>
+                <p class="text-lg mb-4">
+                    Các nhà khoa học thuộc Ủy ban Liên chính phủ về Biến đổi khí hậu (IPCC) và các tổ chức lâm nghiệp toàn cầu liên tục đưa ra cảnh báo khẩn cấp.
+                </p>
+                <blockquote>
+                    <p class="text-xl font-semibold mb-2">
+                        "Chúng ta không còn gọi đây là 'mùa cháy rừng' nữa. Đây là 'thực trạng khí hậu' mới. Các vụ cháy rừng sẽ trở nên thường xuyên hơn, dữ dội hơn và lan rộng ra những khu vực trước đây chưa từng bị ảnh hưởng, bao gồm cả các khu rừng nhiệt đới ẩm ướt và vùng lãnh nguyên."
+                    </p>
+                    <cite class="text-base font-medium not-italic">- Trích dẫn từ báo cáo của Chương trình Môi trường Liên Hợp Quốc (UNEP)</cite>
+                </blockquote>
+                <p class="text-lg mt-4">
+                    Các chuyên gia nhấn mạnh rằng nếu không có hành động quyết liệt để cắt giảm phát thải khí nhà kính và cải thiện công tác quản lý rừng, thế giới sẽ phải đối mặt với các "thảm họa lửa" không thể kiểm soát được.
+                </p>
+            </section>
+
+            <!-- 6. Giải pháp phòng chống -->
+            <section id="giai-phap" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">6. Giải pháp và Chiến lược Phòng chống</h2>
+                <p class="text-lg mb-4">
+                    Phòng chống cháy rừng đòi hỏi một chiến lược tổng hợp, kết hợp cả công nghệ cao, quản lý thực địa và hành động của cộng đồng.
+                </p>
+                
+                <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">6.1. Quản lý rừng chủ động</h3>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li><strong>"Đốt có kiểm soát" (Prescribed Burns):</strong> Chủ động đốt bỏ các thảm thực vật khô, lá rụng... vào mùa ẩm để giảm "nhiên liệu" cho các đám cháy lớn.</li>
+                    <li><strong>Tạo đường băng cản lửa:</strong> Xây dựng các vành đai trống hoặc trồng cây xanh khó cháy để ngăn chặn lửa lan rộng.</li>
+                    <li><strong>Quản lý nhiên liệu:</strong> Thường xuyên dọn dẹp cành cây khô, tỉa thưa cây cối ở những khu vực có nguy cơ cao.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">6.2. Công nghệ và Giám sát</h3>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li><strong>Hệ thống phát hiện sớm:</strong> Sử dụng camera giám sát, drone (máy bay không người lái) và dữ liệu vệ tinh (NASA, ESA) để phát hiện các điểm nóng ngay khi chúng xuất hiện.</li>
+                    <li><strong>Trí tuệ nhân tạo (AI):</strong> Xây dựng các mô hình AI để dự đoán nguy cơ cháy dựa trên độ ẩm, nhiệt độ, tốc độ gió và dữ liệu lịch sử.</li>
+                    <li><strong>Công nghệ chữa cháy:</strong> Phát triển các máy bay chữa cháy lớn hơn, hiệu quả hơn và các chất hãm cháy thân thiện với môi trường.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">6.3. Cộng đồng và Chính sách</h3>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li><strong>Nâng cao ý thức:</strong> Giáo dục cộng đồng về nguy cơ cháy rừng, các quy định cấm lửa nghiêm ngặt vào mùa khô.</li>
+                    <li><strong>Quy hoạch sử dụng đất:</strong> Hạn chế xây dựng nhà cửa ở khu vực giao thoa giữa đô thị và rừng (Wildland-Urban Interface).</li>
+                    <li><strong>Giải quyết gốc rễ:</strong> Cam kết mạnh mẽ của các quốc gia trong việc giảm phát thải khí nhà kính theo Thỏa thuận Paris.</li>
+                </ul>
+            </section>
+
+            <!-- 7. Kết luận -->
+            <section id="ket-luan" class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-6 text-gray-900 border-b-2 border-red-600 pb-2">7. Kết luận</h2>
+                <p class="text-lg mb-4">
+                    Cháy rừng không còn là vấn đề của riêng một quốc gia hay một khu vực. Đó là một cuộc khủng hoảng toàn cầu, một triệu chứng rõ rệt của một hành tinh đang nóng lên.
+                </p>
+                <p class="text-lg mb-4">
+                    Các vụ cháy rừng trong 3 năm qua là lời cảnh tỉnh đanh thép. Chúng cho thấy sự mong manh của các hệ sinh thái và khả năng tàn phá khủng khiếp khi con người và thiên nhiên mất cân bằng.
+                </p>
+                <p class="text-lg font-semibold text-gray-900">
+                    Hành động ngay lập tức, từ cấp độ cá nhân đến chính sách toàn cầu, là bắt buộc. Chúng ta không chỉ chiến đấu với ngọn lửa; chúng ta đang chiến đấu để bảo vệ tương lai của chính mình.
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Nút "Lên đầu trang" -->
+    <button id="scrollTopBtn" title="Lên đầu trang" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 rounded-full shadow-lg items-center justify-center transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 mt-16 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 - Báo cáo này được biên soạn cho mục đích thông tin và giáo dục.</p>
+            <p class="text-sm text-gray-400 mt-1">Phát triển bởi nhóm Google Web Developer.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript cho nút "Lên đầu trang" -->
+    <script>
+        // Lấy nút
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        // Khi người dùng cuộn trang, hiển thị nút
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = 'flex';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        }
+
+        // Khi người dùng nhấp vào nút, cuộn lên đầu trang
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
+
