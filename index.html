@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Life Skills</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+  <div class="sidebar-top">
+    <div class="logo">AI Life Skills</div>
+    <div class="sidebar-subtitle">Học kỹ năng sống cùng AI</div>
+  </div>
+
+  <nav class="nav">
+    <ul class="menu">
+      <li class="menu-item">
+        <button class="menu-link dropdown-toggle">
+           Home
+          <span class="arrow">▸</span>
+        </button>
+        <ul class="submenu">
+          <li class="submenu-item">
+            <button class="submenu-link dropdown-toggle">
+               Kỹ năng sinh tồn <span class="arrow">▸</span>
+            </button>
+            <ul class="sub-submenu">
+              <li><a href="Assistan/flood.html" target="_blank">Thiên tai – Lũ lụt</a></li>
+              <li><a href="Assistan/earthquake.html" target="_blank">Động đất</a></li>
+              <li><a href="Assistan/fire.html" target="_blank">Cháy rừng</a></li>
+            </ul>
+          </li>
+
+          <li class="submenu-item">
+            <button class="submenu-link dropdown-toggle">
+               Kỹ năng phát triển bản thân <span class="arrow">▸</span>
+            </button>
+            <ul class="sub-submenu">
+              <li><a href="Assistan/presentation.html" target="_blank">Kỹ năng thuyết trình</a></li>
+              <li><a href="Assistan/emotion.html" target="_blank">Quản lý cảm xúc</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-item"><a href="games.html" class="menu-link"> Game</a></li>
+      <li class="menu-item"><a href="qa.html" class="menu-link"> Q&amp;A</a></li>
+      <li class="menu-item"><a href="settings.html" class="menu-link"> Cài đặt</a></li>
+  </nav>
+
+  <div class="sidebar-footer">
+    <small>© 2025 AI Crew NT</small>
+  </div>
+</aside>
+
+
+  <main class="main" id="main">
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Khám phá và rèn luyện kỹ năng sống cùng AI</h1>
+        <p>Trang web giúp học sinh rèn luyện kỹ năng sống qua bài học, video & trò chơi tương tác.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="index.html#topics">Bắt đầu ngay</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <h2>Về dự án</h2>
+      <p>AI Life Skills — dự án học kỹ năng sống kết hợp mô hình AI trợ lý, do nhóm học sinh AI Crew NT phát triển.</p>
+      <p>Mục tiêu: giúp học sinh học kỹ năng ứng phó khẩn cấp và phát triển bản thân bằng nội dung chất lượng.</p>
+    </section>
+
+    <section id="topics" class="section">
+      <h2>Chọn chủ đề kỹ năng</h2>
+      <p>Chọn một chủ đề để mở nội dung chi tiết tương ứng.</p>
+
+      <div class="topic-grid">
+        <div class="topic-card">
+          <h3>Kỹ năng sinh tồn</h3>
+          <p>Giữ bình tĩnh, tìm nơi trú ẩn, ứng phó thiên tai.</p>
+          <ul class="subtopic-list">
+            <li><a href="/Assistan/flood.html" target="_blank">Thiên tai – Lũ lụt</a></li>
+            <li><a href="/Assistan/earthquake.html" target="_blank">Động đất</a></li>
+            <li><a href="/Assistan/fire.html" target="_blank">Cháy rừng</a></li>
+           </ul>
+           <a class="btn" href="Assistan/flood.html" target="_blank">Mở bài chi tiết</a>
+        </div>
+
+        <div class="topic-card">
+          <h3>Kỹ năng phát triển bản thân</h3>
+          <p>Thuyết trình, quản lý cảm xúc, tư duy phản biện.</p>
+          <ul class="subtopic-list">
+            <li><a href="/Assistan/presentation.html" target="_blank">Kỹ năng thuyết trình</a></li>
+            <li><a href="/Assistan/emotion.html" target="_blank">Quản lý cảm xúc</a></li>
+          </ul>
+          <a class="btn" href="Assistan/presentation.html" target="_blank">Mở bài chi tiết</a>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <small>© 2025 AI Crew NT — All rights reserved</small>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-container" style="position: fixed; z-index: 999999;">
+      <button id="chatbot-toggle">💬</button>
+
+      <div id="chatbot-box" class="hidden">
+        <div id="chatbot-header">
+          <h3>AI Chatbot</h3>
+          <button id="chatbot-close" title="Đóng">✕</button>
+        </div>
+
+        <div id="chatbot-messages">
+          <div class="bot-msg">Xin chào 👋! Mình là trợ lý AI hỗ trợ học kỹ năng sống.</div>
+        </div>
+
+        <div id="chatbot-input">
+          <input type="text" id="user-input" placeholder="Nhập câu hỏi..." />
+          <button id="send-btn">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
